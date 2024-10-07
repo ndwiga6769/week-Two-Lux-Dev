@@ -88,4 +88,18 @@ inside, so the new copy is completely independent of the original.
         print(original)  # Output: [[100, 2], [3, 4]] (original remains unchanged)
 
 
+### Difference between Lists and Tuples in Python
 
+Mutability: Lists are mutable, meaning you can modify (add, remove, change) 
+their elements after creation. Tuples are immutable, meaning once they 
+are created, their elements cannot be changed.
+
+Syntax: Lists are created using square brackets [ ], while 
+tuples are created using parentheses ( ).
+
+Performance: Tuples are generally faster than lists because they are 
+immutable and thus require less memory.
+
+Use Case: Lists are used when data needs to be changed or modified, 
+whereas tuples are used for fixed collections of items, such as 
+constants or grouped data that should not change.
