@@ -65,3 +65,27 @@ inside square brackets, optionally with conditions
 Shallow Copy: A shallow copy creates a new object, but the elements inside the 
 object are still references to the original. This means changes to mutable objects
 within the shallow copy will reflect in the original object
+
+Deep Copy: A deep copy creates a new object and recursively copies all objects 
+inside, so the new copy is completely independent of the original.
+
+        Use shallow copy when you only need to copy the outer object 
+        (and the internal objects can remain shared).
+        Use deep copy when you need an entirely independent copy, including all nested objects
+
+        
+        Original list with nested structure
+        original = [[1, 2], [3, 4]]
+
+        Shallow copy
+        shallow = copy.copy(original)
+        shallow[0][0] = 100
+        print(original)  # Output: [[100, 2], [3, 4]] (modifies original)
+
+        Deep copy
+        deep = copy.deepcopy(original)
+        deep[0][0] = 1
+        print(original)  # Output: [[100, 2], [3, 4]] (original remains unchanged)
+
+
+
