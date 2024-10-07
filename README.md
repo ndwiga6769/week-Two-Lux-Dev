@@ -42,3 +42,26 @@ Advantages of NumPy Arrays:
 Fast element-wise operations and broadcasting.
 Support for multi-dimensional arrays and advanced mathematical functions.
 Efficient memory usage and better performance in large-scale numerical computations.
+
+
+### List Comprehension in Python
+
+List comprehension provides a concise way to create lists.
+It allows for constructing lists by embedding a for-loop 
+inside square brackets, optionally with conditions
+
+         List comprehension to generate squared values
+
+        squares = [x**2 for x in range(10)]
+        print(squares)  # Output: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+
+        List comprehension with a condition to filter even numbers
+
+        evens = [x for x in range(10) if x % 2 == 0]
+        print(evens)  # Output: [0, 2, 4, 6, 8]
+
+### Shallow and Deep Copying in Python
+
+Shallow Copy: A shallow copy creates a new object, but the elements inside the 
+object are still references to the original. This means changes to mutable objects
+within the shallow copy will reflect in the original object
