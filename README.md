@@ -103,3 +103,14 @@ immutable and thus require less memory.
 Use Case: Lists are used when data needs to be changed or modified, 
 whereas tuples are used for fixed collections of items, such as 
 constants or grouped data that should not change.
+
+            List
+            lst = [1, 2, 3]
+            lst[0] = 10  # This works because lists are mutable
+            print(lst)  # Output: [10, 2, 3]
+
+            Tuple
+            tup = (1, 2, 3)
+            # tup[0] = 10  # This would raise an error because tuples are immutable
+            print(tup)  # Output: (1, 2, 3)
+
