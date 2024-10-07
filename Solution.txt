@@ -1,0 +1,10 @@
+Garbage collection
+
+It is the process of automatically freeing up memory by removing objects
+ that are no longer referenced or in use. In Python, memory management is 
+ handled by the Python memory manager, which includes mechanisms like 
+ reference counting and a cyclic garbage collector.
+
+Reference Counting: Every object in Python has a reference count. When an object's reference count reaches zero (i.e., no variables or data structures point to it), it is automatically deallocated from memory.
+Cyclic Garbage Collection: Python’s garbage collector can detect reference cycles, which happen when objects reference each other, preventing their reference counts from reaching zero. The garbage collector identifies these cycles and breaks them to free memory.
+Garbage collection is crucial because it ensures efficient memory usage, preventing memory leaks in long-running programs.
